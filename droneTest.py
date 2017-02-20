@@ -13,7 +13,7 @@ adapter = pygatt.BGAPIBackend()
 
 
 #Different Comand Buffer used
-TakeOffBuffer=bitstring.BitArray('0x02,0x00,0x00,0x01').bytes;
+TakeOffBuffer=bitstring.BitArray('0x02,0x00,0x01,0x00').bytes;
 LandingBuffer=bitstring.BitArray('0x02,0x00,0x03,0x00').bytes;
 NotifyBuffer =bitstring.BitArray('0x00,0x01').bytes;
 # The BGAPI backend will attemt to auto-discover the serial device name of the
